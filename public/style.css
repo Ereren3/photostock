@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,500,700,600,900&display=swap');
+
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        box-sizing: border-box;
+    }
+
+    #banner{
+        width: 100%;
+        background-image: url("brick.jpg");
+        background-position: center;
+        background-size: 10%;
+    }
+
+    #banner-bottom{
+        display: block;
+        width: 100%;
+        height: 5vh;
+        background-image: url("brick.jpg");
+        background-position: center;
+        background-size: 10%;
+    }   
+
+    #banner-bottom span{
+        display: block;
+        margin-top: 2vh;
+        color: gray;
+        font-weight: 400;
+        font-style: italic;
+    }
+
+    #banner-line{
+        width: 100%;
+        height: 15px;
+        background-image: linear-gradient(180deg, transparent 30%, rgba(255,255,255,0.7) 100%);
+    }
+
+    #footer{
+        width: 100%;
+        height: 3vh;
+        background-image: linear-gradient(180deg, rgba(255,255,255,0.7) 60%, transparent 100%);
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+    #header{
+        padding: 15px;
+        max-width: 100%;
+        height: auto;
+        background: rgb(31, 31, 31);
+        color: white;
+    }
+
+    #header span{
+        display: inline;
+        font-weight: 300;
+        width: 25%;
+        margin-left: 5%;
+        font-size: 25px;
+    }
+
+    #header span + span{
+        display: none;
+    }
+
+    #header > div {
+        display: inline;
+        width: 250px;
+        float: right;
+        margin-right: 2%;
+    }
+
+    #header > div:after{ clear: both; }
+
+    #signinout{
+        transition: .3s;
+        cursor: pointer;
+        display: inline;
+        font-size: 25px;
+        font-weight: 900;
+        color: gray;
+    }
+    #signinout:hover{
+        transition: .3s;
+        color: white;
+    }
+
+    body{
+        background: #f7f7f7;
+    }
+
+    .category:hover{
+        background-image: url("bg-category.jpg")  !important;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        border-radius: 8px;
+        transition: 0.3s;
+        -webkit-box-shadow: 0px 0px 41px 16px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 41px 16px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 41px 16px rgba(0,0,0,0.75);
+    }
+
+
+    .category:hover > div > span{ color: white;}
+    
+    .category > div > span {
+    
+       color: white;
+       font-family: 'Montserrat', sans-serif;
+       font-weight: 700;
+    }
+
+    #category-bar{
+        padding-left: 5% ;
+        padding-top: 5px;
+        width: 100%;
+    }
+
+    .category {
+        text-align: center;
+        width: 19%;
+        display: inline-block;
+        height: 8vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border-radius: 8px;
+        transition: 0.3s;
+        margin-bottom: 8px;
+        cursor: pointer;
+        -webkit-box-shadow: 0px 0px 25px 4px rgba(0,0,0,0.63);
+        -moz-box-shadow: 0px 0px 25px 4px rgba(0,0,0,0.63);
+        box-shadow: 0px 0px 25px 4px rgba(0,0,0,0.63);
+    }
+
+    .category > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .baslik {
+        padding-bottom: 10px;
+    }
+
+    .baslik > span{
+        font-size: 60px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+    }
+    
+    .baslik #baslik-aciklama{
+        width: 250px;
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+    }
+
+    #baslik-follow{
+        
+        cursor: pointer;
+        margin-top: 5px;
+        width: 150px;
+        height: 25px;
+        font-size: 15px;
+        color: white;
+        border-radius: 500px;
+        background-color: #0074D9;
+        border: 2px solid #0074D9;
+        box-sizing:border-box;
+        -webkit-box-sizing:border-box;
+        -moz-box-sizing:border-box;
+        transition: .5s;
+    }
+    #baslik-follow:hover{
+        border: 2px solid rgb(123, 182, 233);
+        box-sizing:border-box;
+        -webkit-box-sizing:border-box;
+        -moz-box-sizing:border-box;
+        transition: .5s;
+    }
+
+    #enler-logo{
+        width: 60px;
+        height: 60px;
+        margin-bottom: -9px;
+    }
+
+    #baslik-enler   {display: block;}
+    #baslik-oyun    {display: none;}
+    #baslik-grafik  {display: none;}
+    #baslik-moda    {display: none;}
+    #baslik-mimari  {display: none;}
+    #baslik-xd      {display: none;}
+    #enler          {display: block;}
+    #oyun           {display: none;}
+    #grafik         {display: none;}
+    #moda           {display: none;}
+    #mimari         {display: none;}
+    #xd             {display: none;}
+
+    .container{
+        padding: 0;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        width: 100%;
+        min-height: 70vh;
+        height: auto;
+    }
+
+    .container > div > div {
+        min-width: 25%;
+        height: 35vh;
+        margin: 10px;
+        display: inline-block;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        -webkit-box-shadow: 0px 0px 25px 4px rgba(0,0,0,0.63);
+        -moz-box-shadow: 0px 0px 25px 4px rgba(0,0,0,0.63);
+        box-shadow: 0px 0px 25px 4px rgba(0,0,0,0.63);
+        border-radius: 24px;
+    }
+
+    .container > div > div > div{
+        width: 22%;
+        height: 30px;
+        background-color: rgb(31,31,31);
+        display: block;
+        border-bottom-right-radius: 24px;
+        border-bottom-left-radius: 24px;
+        padding-top: 3px;
+    }
+
+    .container > div > div > div > span {
+        cursor: pointer;
+        height: 25px;
+        width: 25px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-image: url(heart.png);
+        display: inline-block;
+    }
+
+    .container > div > div > div > span:hover {
+        background-image: url(heart-hover.png);
+    }
+
+    #fullscreen {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.815);
+        display: none;
+    }
+
+    #fullscreen-img {
+        max-width: 90%;
+        max-width: 90vh;
+        margin-top: 2vh;
+    }
+
+    .container > div > div > div > span + span {
+        cursor: pointer;
+        height: 25px;
+        width: 25px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-image: url(fullscreen.png);
+        display: inline-block;
+    }
+
+    .container > div > div > div > span + span:hover {
+        background-image: url(fullscreen.png);
+    }
+
+
+
+    @media only screen and (max-width: 1280px) {
+        .container > div > div {
+            width: 40%;
+            margin: 0;
+            margin: 10px;
+        }
+    }
+
+
+    @media only screen and (max-width: 760px) {
+        .category {
+            background-size: 200% !important;
+            height: 8vh;
+            
+        }
+
+        #category-bar{
+            padding: 0;
+            padding-top: 5px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .baslik #baslik-aciklama{
+            font-size: 15px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+        }
+
+        #header span + span{
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin: 0;
+        }
+
+        #header span{
+            display: none;
+        }
+
+        #header span + span > span{
+            display: inline;
+            font-weight: 500;
+        }
+
+        .container > div > div {
+            width: 70%;
+            height: 30vh;
+            margin: 0;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+    }
+

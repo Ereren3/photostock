@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="/script.js"></script>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <title>stocked</title>
+</head>
+<body>
+    <!--HEADER-->
+    <div id="header">
+    <a href="/index">
+        <span>stocked</span> 
+        <span><span>stock</span>ed</span>
+    </a> 
+        <div>
+            <span id="signinout" onclick="sign()">Giriş Yap / Kayıt Ol</span>
+        </div>
+    </div>
+
+    <!--KATEGORİLER-->
+<div id="banner">
+    <div id="category-bar">
+                <div onclick="category(1)" class="category" style="background-image: url(/category-oyun.jpg)">   <div>   <span>Oyun Tasarımı   </span>   </div>      </div>
+                <div onclick="category(2)" class="category" style="background-image: url(/category-grafik.png)"> <div>   <span>Grafik Tasarım  </span>   </div>      </div>
+                <div onclick="category(3)" class="category" style="background-image: url(/category-moda.jpg)">   <div>   <span>Moda            </span>   </div>      </div>
+                <div onclick="category(4)" class="category" style="background-image: url(/category-mimari.jpg)"> <div>   <span>Mimari          </span>   </div>      </div>
+                <div onclick="category(5)" class="category" style="background-image: url(/category-xd.jpg)">     <div>   <span>XD              </span>   </div>      </div>
+            </div>
+
+    <!--BAŞLIKLAR-->
+    <center>
+        <div class="baslik" id="baslik-enler"> <span> <img src="/enler-logo.png" id="enler-logo"> EN'LERİ </span> <br> <span id="baslik-aciklama">Bu gün'ün en'leri.</span>  </div>
+        <div class="baslik" id="baslik-oyun"> <span> OYUN TASARIMI </span> <br> <span id="baslik-aciklama">Animasyondan karakter tasarımlarına kadar, iyi tasarlanmış oyunların nasıl ortaya çıktığını keşfedin</span> 
+            <div id="baslik-follow" onclick="follow('Oyun Tasarımı')"> Konuyu takip et</div>
+        </div>
+        <div class="baslik" id="baslik-grafik"> <span> GRAFİK TASARIM </span> <br> <span id="baslik-aciklama">Poster, logo, markalama, müzik ambalajları ve çok daha fazlasıyla en iyi grafik tasarım çalışmalarına göz atın</span> 
+            <div id="baslik-follow" onclick="follow('Grafik Tasarımı')"> Konuyu takip et</div>
+        </div>
+        <div class="baslik" id="baslik-moda"> <span> MODA </span> <br> <span id="baslik-aciklama">Tasarımdan modellere ve makyaja kadar günümüzün en yeni moda akımlarını keşfedin</span> 
+            <div id="baslik-follow" onclick="follow('ST ENLERİ')"> Konuyu takip et</div>
+        </div>
+        <div class="baslik" id="baslik-mimari"> <span> MİMARİ </span> <br> <span id="baslik-aciklama">Evlerin içinden geleceğin şehirlerine, en iyi iç tasarımlara, mimari fotoğraflara ve görselleştirme çalışmalarına göz atın</span> 
+            <div id="baslik-follow" onclick="follow('Mimari')"> Konuyu takip et</div>
+        </div>
+        <div class="baslik" id="baslik-xd"> <span> XD </span> <br> <span id="baslik-aciklama">XD ile fikirlerinizi hızla prototipe dönüştürün</span> 
+            <div id="baslik-follow" onclick="follow('XD')"> Konuyu takip et</div>
+        </div> 
+    </center>
+    <div id="banner-line"></div>
+</div>
+    <!--CONTAİNERLER-->
+    <center>
+    <div class="container">
+        <div id="enler"> <!--fullscreen(foto)-->
+                <div style="background-image: url(/article/mi3.jpg);"> <div> <span id="001" onclick="like('001')"></span> <span onclick="fullscreen('mi3')"></span> </div> </div>
+                <div style="background-image: url(/article/x2.jpg);"> <div> <span id="002" onclick="like('002')"></span> <span onclick="fullscreen('x2')"></span> </div> </div>
+                <div style="background-image: url(/article/m3.jpg);"> <div> <span id="003" onclick="like('003')"></span> <span onclick="fullscreen('m3')"></span> </div> </div>
+                <div style="background-image: url(/article/m10.jpg);"> <div> <span id="004" onclick="like('004')"></span> <span onclick="fullscreen('m10')"></span> </div> </div>
+                <div style="background-image: url(/article/m6.jpg);"> <div> <span id="005" onclick="like('005')"></span> <span onclick="fullscreen('m6')"></span> </div> </div>
+                <div style="background-image: url(/article/mi7.jpg);"> <div> <span id="006" onclick="like('006')"></span> <span onclick="fullscreen('mi7')"></span> </div> </div>
+        </div>
+        <div id="oyun"> <!--fullscreen(foto)-->
+                <div style="background-image: url(/article/g1.jpg);"> <div> <span id="009" onclick="like('009')"></span> <span onclick="fullscreen('g1')"></span> </div> </div>
+                <div style="background-image: url(/article/g2.jpg);"> <div> <span id="010" onclick="like('010')"></span> <span onclick="fullscreen('g2')"></span> </div> </div>
+                <div style="background-image: url(/article/g3.jpg);"> <div> <span id="011" onclick="like('011')"></span> <span onclick="fullscreen('g3')"></span> </div> </div>
+                <div style="background-image: url(/article/g4.jpg);"> <div> <span id="012" onclick="like('012')"></span> <span onclick="fullscreen('g4')"></span> </div> </div>
+                <div style="background-image: url(/article/g5.jpg);"> <div> <span id="013" onclick="like('013')"></span> <span onclick="fullscreen('g5')"></span> </div> </div>
+                <div style="background-image: url(/article/g6.jpg);"> <div> <span id="014" onclick="like('014')"></span> <span onclick="fullscreen('g6')"></span> </div> </div>
+                <div style="background-image: url(/article/g7.jpg);"> <div> <span id="015" onclick="like('015')"></span> <span onclick="fullscreen('g7')"></span> </div> </div>
+        </div>
+        <div id="grafik"> <!--fullscreen(foto)-->
+                <div style="background-image: url(/article/d1.jpg);"> <div> <span id="018" onclick="like('018')"></span> <span onclick="fullscreen('d1')"></span> </div> </div>
+                <div style="background-image: url(/article/d2.jpg);"> <div> <span id="019" onclick="like('019')"></span> <span onclick="fullscreen('d2')"></span> </div> </div>
+                <div style="background-image: url(/article/d3.jpg);"> <div> <span id="020" onclick="like('020')"></span> <span onclick="fullscreen('d3')"></span> </div> </div>
+                <div style="background-image: url(/article/d4.jpg);"> <div> <span id="021" onclick="like('021')"></span> <span onclick="fullscreen('d4')"></span> </div> </div>
+                <div style="background-image: url(/article/d5.jpg);"> <div> <span id="022" onclick="like('022')"></span> <span onclick="fullscreen('d5')"></span> </div> </div>
+                <div style="background-image: url(/article/d6.jpg);"> <div> <span id="023" onclick="like('023')"></span> <span onclick="fullscreen('d6')"></span> </div> </div>
+                <div style="background-image: url(/article/d7.jpg);"> <div> <span id="024" onclick="like('024')"></span> <span onclick="fullscreen('d7')"></span> </div> </div>
+        </div>  
+        <div id="moda"> <!--fullscreen(foto)-->
+            <div style="background-image: url(/article/m1.jpg);"> <div> <span id="027" onclick="like('027')"></span> <span onclick="fullscreen('m1')"></span> </div> </div>
+            <div style="background-image: url(/article/m2.jpg);"> <div> <span id="028" onclick="like('028')"></span> <span onclick="fullscreen('m2')"></span> </div> </div>
+            <div style="background-image: url(/article/m3.jpg);"> <div> <span id="029" onclick="like('029')"></span> <span onclick="fullscreen('m3')"></span> </div> </div>
+            <div style="background-image: url(/article/m4.jpg);"> <div> <span id="030" onclick="like('030')"></span> <span onclick="fullscreen('m4')"></span> </div> </div>
+            <div style="background-image: url(/article/m5.jpg);"> <div> <span id="031" onclick="like('031')"></span> <span onclick="fullscreen('m5')"></span> </div> </div>
+            <div style="background-image: url(/article/m6.jpg);"> <div> <span id="032" onclick="like('032')"></span> <span onclick="fullscreen('m6')"></span> </div> </div>
+            <div style="background-image: url(/article/m8.jpg);"> <div> <span id="034" onclick="like('034')"></span> <span onclick="fullscreen('m8')"></span> </div> </div>
+            <div style="background-image: url(/article/m9.jpg);"> <div> <span id="035" onclick="like('035')"></span> <span onclick="fullscreen('m9')"></span> </div> </div>
+    </div>
+    <div id="mimari"> <!--fullscreen(foto)-->
+            <div style="background-image: url(/article/mi1.jpg);"> <div> <span id="036" onclick="like('036')"></span> <span onclick="fullscreen('mi1')"></span> </div> </div>
+            <div style="background-image: url(/article/mi2.jpg);"> <div> <span id="037" onclick="like('037')"></span> <span onclick="fullscreen('mi2')"></span> </div> </div>
+            <div style="background-image: url(/article/mi3.jpg);"> <div> <span id="038" onclick="like('038')"></span> <span onclick="fullscreen('mi3')"></span> </div> </div>
+            <div style="background-image: url(/article/mi4.jpg);"> <div> <span id="039" onclick="like('039')"></span> <span onclick="fullscreen('mi4')"></span> </div> </div>
+            <div style="background-image: url(/article/mi5.jpg);"> <div> <span id="040" onclick="like('040')"></span> <span onclick="fullscreen('mi5')"></span> </div> </div>
+            <div style="background-image: url(/article/mi6.jpg);"> <div> <span id="041" onclick="like('041')"></span> <span onclick="fullscreen('mi6')"></span> </div> </div>
+            <div style="background-image: url(/article/mi7.jpg);"> <div> <span id="042" onclick="like('042')"></span> <span onclick="fullscreen('mi7')"></span> </div> </div>
+            <div style="background-image: url(/article/mi8.jpg);"> <div> <span id="043" onclick="like('043')"></span> <span onclick="fullscreen('mi8')"></span> </div> </div>
+            <div style="background-image: url(/article/mi9.jpg);"> <div> <span id="044" onclick="like('044')"></span> <span onclick="fullscreen('mi9')"></span> </div> </div>
+    </div>
+    <div id="xd"> <!--fullscreen(foto)-->
+            <div style="background-image: url(article/x1.jpg);"> <div> <span id="045" onclick="like('045')"></span> <span onclick="fullscreen('x1')"></span> </div> </div>
+            <div style="background-image: url(/article/x2.jpg);"> <div> <span id="046" onclick="like('046')"></span> <span onclick="fullscreen('x2')"></span> </div> </div>
+            <div style="background-image: url(/article/x3.jpg);"> <div> <span id="047" onclick="like('047')"></span> <span onclick="fullscreen('x3')"></span> </div> </div>
+            <div style="background-image: url(/article/x4.jpg);"> <div> <span id="048" onclick="like('048')"></span> <span onclick="fullscreen('x4')"></span> </div> </div>
+            <div style="background-image: url(/article/x5.jpg);"> <div> <span id="049" onclick="like('049')"></span> <span onclick="fullscreen('x5')"></span> </div> </div>
+            <div style="background-image: url(/article/x6.jpg);"> <div> <span id="050" onclick="like('050')"></span> <span onclick="fullscreen('x6')"></span> </div> </div>
+    </div>             
+        </div>
+
+    </div>
+    </center>
+
+    <div id="banner-bottom"><div id="footer"></div></div>
+
+
+
+    <div id="fullscreen" onclick="flscrn_close()"><center><img src="/article/001.jpg" id="fullscreen-img"></center></div>
+</body>
+</html>
